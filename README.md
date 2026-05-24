@@ -2,6 +2,20 @@
 
 ## Setup
 
+### Option 1: Prebuilt Docker image (analytics search only)
+
+To skip data ingestion and just run the analytics chatbot against the pre-built index:
+
+```bash
+docker run --rm -p 8501:8501 \
+  -e LLM_API_KEY=sk-proj-... \
+  teslalord/cc-insights:latest
+```
+
+Then open <http://localhost:8501>.
+
+### Option 2: Full application (ingestion + chatbot + eval)
+
 ```bash
 git clone https://github.com/TeslaLord/conversational-intelligence-analytics.git
 cd conversational-intelligence-analytics
