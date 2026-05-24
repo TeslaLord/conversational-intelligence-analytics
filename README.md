@@ -12,6 +12,7 @@ pip install -r requirements.txt
 
 cp .env.example .env
 # fill in your OpenAI API key
+# (optional for prototype) in the env file also replace the salt for security PII_HASH_SALT
 ```
 
 Drop the dataset in the project root as `customer_support_data.csv`.
