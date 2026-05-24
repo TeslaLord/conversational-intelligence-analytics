@@ -1,0 +1,37 @@
+[
+  {
+    "id": "q1",
+    "question": "What are the top 5 topics most associated with negative customer sentiment?",
+    "expected_intent": "aggregate",
+    "must_mention": ["negative", "topic"],
+    "min_evidence": 1
+  },
+  {
+    "id": "q2",
+    "question": "Which support agents may benefit from additional coaching on empathy or customer communication?",
+    "expected_intent": "agent_coaching",
+    "must_mention": ["empathy"],
+    "min_evidence": 1
+  },
+  {
+    "id": "q3",
+    "question": "Which recurring customer concerns should contact-centre leadership review first?",
+    "expected_intent": "cluster_topics",
+    "must_mention": ["recurring", "concern"],
+    "min_evidence": 1
+  },
+  {
+    "id": "q4",
+    "question": "Show me example conversations where customers had to rephrase their question multiple times.",
+    "expected_intent": "retrieve_examples",
+    "must_mention": ["rephrase"],
+    "min_evidence": 1
+  },
+  {
+    "id": "q5",
+    "question": "Which intents have the highest resolution rate?",
+    "expected_intent": "aggregate",
+    "must_mention": ["resolution"],
+    "min_evidence": 0
+  }
+]

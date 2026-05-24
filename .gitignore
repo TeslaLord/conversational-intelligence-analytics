@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Data, caches, databases
+data/
+.chroma/
+chroma/
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.sqlite-*
+*.parquet
+*.log
+
+# OS / editor / Windows download artefacts
+.DS_Store
+*:Zone.Identifier
+.vscode/
+.idea/
