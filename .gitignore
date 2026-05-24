@@ -14,6 +14,7 @@ __pycache__/
 
 # Data, caches, databases
 data/
+!cc_insights/data/
 .chroma/
 chroma/
 *.duckdb
